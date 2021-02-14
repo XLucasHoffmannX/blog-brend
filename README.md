@@ -7,9 +7,9 @@
 - ✅ **Excluir um artigo**
 
 ## Technologies
-- 👉**Nodejs com ejs**
-- 👉**MongoDB**
-- 👉**DomPurify para posts mais elaborados**
+- 👉 **Nodejs com ejs**
+- 👉 **MongoDB**
+- 👉 **DomPurify para posts mais elaborados**
 
 ## Run
 > Example: **127.0.0.1:300/** or **localhost:3000**
