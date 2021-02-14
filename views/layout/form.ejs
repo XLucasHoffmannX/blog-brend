@@ -1,0 +1,11 @@
+<input required type="text" value="<%= article.title %>" class="form-contact-input" name="title" id="title" placeholder="Titulo da publicação" maxlength="100"
+    required />
+<textarea class="form-contact-textarea" name="description" id="description" placeholder="Descrição..." required><%= article.description %></textarea>
+<div class="control">
+    <label for="">Conteúdo de sua publicação:</label>
+</div>
+<textarea class="form-contact-textarea" name="markdown" id="markdown" required><%= article.markdown %></textarea>
+<div class="btns">
+    <a class="btn-form btn-cancel" href="/">Cancelar</a>
+    <button type="submit" class="btn-form btn-submit">Enviar</button>
+</div>

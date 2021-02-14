@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <%- include('./layout/header') %>
+    <title>Editar artigo • Blog Brend </title>
+</head>
+
+<body>
+    <div id="container">
+        <div class="content">
+            <div class="container">
+                <form method="POST" action="/<%= article.id %>?_method=PUT" class="form-contact"  tabindex="1">
+                    <h1>Editar Publicação:</h1>
+                    <%- include('./layout/form') %>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <%- include('./layout/footer') %>
+    </footer>
+</body>
+
+</html>

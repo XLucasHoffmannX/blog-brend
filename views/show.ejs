@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <%- include('./layout/header') %>
+  <title><%- article.title %></title>
+</head>
+
+<body>
+  <div id="container">
+    <div class="btns-show">
+      <a href="/" class="btn btn-redirect">Acessar todos os artigos</a>
+      <a href="/edit/<%= article.id %>" class="btn btn-redirect">Editar esta publicação</a>
+    </div>
+    <div id="container-show">
+      
+      <div class="show">
+        <div class="title-show">
+          <h1><%- article.title %></h1>
+        </div>
+        <div class="date-show">
+          <h3>Publicado em <%= article.date.toLocaleDateString()%> - Brend Blog</h3>
+        </div>
+        <div class="markdown-show">
+          <%- article.sanitizedHtml %>
+        </div>
+  
+        <div class="description-show">
+          <h4>Descrição desta publicação:</h4>
+          <p>
+            "<%- article.description %>"
+          </p>
+        </div>
+        <div class="author-show">Author - Roboset</div>
+      </div>
+    </div>
+    <div class="btns-show">
+      <form action="/<%= article.id %>?_method=DELETE" method="POST">
+        <button type="submit" class="btn">Excluir esta publicação</button>
+      </form>
+    </div>
+    <footer>
+      <%- include('./layout/footer')%>
+    </footer>
+  </div>
+</body>
+
+</html>

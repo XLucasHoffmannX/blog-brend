@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <%- include('./layout/header') %>
+    <title>Brend Blog</title>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <div class="sup">
+                <h3>Bem Vindo!</h3>
+                <h1>Brend Blog</h1>
+                <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem maiores tempora quibusdam
+                    saepe in doloremque possimus et voluptas nobis beatae. Cupiditate assumenda, minima vero laboriosam
+                    modi omnis? Vel, explicabo consectetur!</small>
+            </div>
+            <div class="inf">
+                <a href="/new" class="btn btn-primary">Adcionar um artigo</a>
+            </div>
+        </header>
+
+        <main>
+            <div class="title-articles">
+                <h1>Últimos posts:</h1>
+            </div>
+            <div class="articles">
+                <% articles.forEach(article => { %>
+                    <div class="card">
+                        <div class="avatar">
+                            <img class="" src="https://img.icons8.com/cotton/64/000000/robot-2.png"
+                                alt="Robo das publicações" />
+                        </div>
+                        <div class="title">
+                            <h2><%= article.title %></h2>
+                            <div class="date"><%= article.date.toLocaleDateString() %></div>
+                        </div>
+                        <div class="description"><%= article.description %></div>
+                        <div class="btn">
+                            <a href="/<%= article.slug %>" class="btn btn-access">Ler sobre</a>
+                        </div>
+                    </div>
+                <% }) %>
+        </main>
+        <footer>
+            <%- include('./layout/footer') %>
+        </footer>
+    </div>
+</body>
+
+</html>
