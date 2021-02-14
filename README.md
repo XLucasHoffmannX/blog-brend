@@ -4,7 +4,7 @@
 ## Features
 - ✅ **Publicar um artigo**
 - ✅ **Editar um artigo**
-- ✅ **Excluir um artigo
+- ✅ **Excluir um artigo**
 
 ## Technologies
 - 👉**Nodejs com ejs**
