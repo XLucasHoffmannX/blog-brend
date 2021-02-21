@@ -12,7 +12,7 @@
 - 👉 **DomPurify para posts mais elaborados**
 
 ## Run
-> Example: **127.0.0.1:300/** or **localhost:3000**
+> Example: **127.0.0.1:3000/** or **localhost:3000**
 
 - **Install the dependencies `npm i`**
 - **At the terminal start `npm start`** or `npm run dev`
